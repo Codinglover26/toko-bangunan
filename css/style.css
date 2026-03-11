@@ -1,0 +1,202 @@
+/* =========================
+   GLOBAL STYLE
+========================= */
+body {
+    padding-top: 70px; /* agar tidak tertutup navbar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 35px,
+            rgba(0, 0, 0, 0.03) 35px,
+            rgba(0, 0, 0, 0.03) 70px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 35px,
+            rgba(0, 0, 0, 0.03) 35px,
+            rgba(0, 0, 0, 0.03) 70px
+        );
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+/* =========================
+   LOGO NAVBAR
+========================= */
+.logo{
+    height: 60px;
+    width: auto;
+}
+
+/* =================================
+   HERO SECTION (INDEX) FADE EFFECT
+==================================== */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("../assets/temp_hero.jpeg") no-repeat center center / cover;
+
+    transition: opacity 0.3s ease;
+}
+
+/* =========================
+   PRODUK PAGE (Index & Produk Page)
+========================= */
+.card img {
+    height: 220px;
+    object-fit: contain;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-warning {
+    font-weight: 600;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    font-size: 14px;
+}
+
+footer .fw-bold {
+    font-size: 16px;
+}
+
+/* =========================
+   FOOTER SOCIAL ICON
+========================= */
+footer a:hover {
+    color: #ffc107; /* kuning Bootstrap */
+    transition: color 0.3s;
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+    }
+    
+    body {
+        padding-top: 56px;
+        font-size: 14px;
+    }
+    
+    /* Navbar mobile */
+    .navbar-brand span {
+        font-size: 14px;
+    }
+    
+    .logo {
+        height: 40px;
+    }
+    
+    /* Hero section mobile */
+    .hero-section h1 {
+        font-size: 24px;
+    }
+    
+    .hero-section .lead {
+        font-size: 14px;
+    }
+    
+    /* Cards mobile */
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    /* Buttons mobile */
+    .btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 12px;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
+    
+    /* Video mobile */
+    .sticky-top {
+        position: relative !important;
+        top: auto !important;
+    }
+    
+    /* Typography mobile */
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 20px;
+    }
+    
+    .hero-section .lead {
+        font-size: 12px;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .card-body {
+        padding: 0.75rem;
+    }
+    
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+}
